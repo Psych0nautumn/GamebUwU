@@ -14,6 +14,7 @@ public class Loader {
             throw new RuntimeException(e);
         }
         try {
+
             int length = inputStream.available();
         } catch (IOException e) {
             throw new RuntimeException(e);
