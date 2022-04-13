@@ -7,7 +7,7 @@ public class Loader {
     public static void loadRom() {
 
 
-        FileInputStream inputStream = null;
+        FileInputStream inputStream;
         try {
             inputStream = new FileInputStream("C:/Users/Autumn/Documents/untitled/src/main/java/pokemon.gb");
         } catch (FileNotFoundException e) {
@@ -21,12 +21,11 @@ public class Loader {
 
 
         try (BufferedInputStream romStream = new BufferedInputStream(inputStream)) {
-            int i = 0;
+            int i;
             int count = 0;
             while ((i = romStream.read()) != -1) {
                 System.out.printf("%02x ", i);
-
-
+                System.out.println("hi");
                 count++;
 
                 if (count == 16) {
