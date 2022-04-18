@@ -20,7 +20,6 @@ public class Loader {
         }
 
 
-
         try (BufferedInputStream romStream = new BufferedInputStream(inputStream)) {
             int i;
             int count = 0;
